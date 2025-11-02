@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import products from "./data";
 import Item from "./components/Item";
@@ -31,6 +31,12 @@ const App = () => {
       setCartList(newCart); // nastavíme nový stav
     }
   };
+
+  useEffect(() => {
+    if (cartList.length === 0) {
+      setShowCart(false)
+    }
+  }, [cartList])
   return (
     <>
       <header className="header">
