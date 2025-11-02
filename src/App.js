@@ -34,9 +34,9 @@ const App = () => {
   return (
     <>
       <header className="header">
-        <div className="header-content">
+        <div onClick={() => setShowCart(!showCart)} className="header-content">
           <img
-            onClick={() => setShowCart(!showCart)}
+            
             className="cart-img"
             src={cart}
             alt="cart"
