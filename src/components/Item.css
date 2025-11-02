@@ -1,0 +1,63 @@
+body {
+  box-sizing: border-box;
+  background-color: #e7e7e7;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product {
+  box-shadow: 0px 0px 10px #b4b4b4;
+  background-color: #ffffff;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-down {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+  padding-top: 15px;
+  border-top: 1px solid black;
+  height: 50px;
+}
+
+.product-down-two {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-to-cart {
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #b4b4b4;
+  background-color: #f3ff85;
+  padding: 5px 10px;
+  color: rgb(0, 0, 0);
+  transition: all 0.2s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-to-cart:hover {
+  scale: 1.02;
+  cursor: pointer;
+}
